@@ -57,6 +57,41 @@ h5 {
     font-weight: 900;
 }
 
+.animate {
+    margin-top: 180px;
+    margin-bottom: 80px;
+    overflow: hidden;
+}
+
+.animate img {
+    max-width: 100%;
+    position: relative;
+    animation: slideup 3.5s ease infinite;
+}
+.animate img:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.animate img:nth-child(1) {
+    animation-delay: 0.4s;
+}
+@keyframes slideup {
+    0% {
+        top: 180px;
+    }
+    20% {
+        top: 0;
+    }
+    50% {
+        top: 0;
+    }
+    80% {
+        top: -180px;
+    }
+    100% {
+        top: -180px;
+    }
+}
+
 .button {
     font-size: 20px;
     font-weight: 900;
